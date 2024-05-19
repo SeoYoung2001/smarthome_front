@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/face_24dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="45dp"
+            android:text="SMARTHOME"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/baseline_toc_black_24dp" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:paddingBottom="30dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/gray"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:padding="28dp">
+
+        <Button
+            android:id="@+id/Hudminity_Btn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="90dp"
+            android:gravity="center"
+            android:background="@drawable/rounded_corner"
+            android:letterSpacing="0.1"
+            android:text="35%"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/gray"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/baseline_device_thermostat_black_24dp" />
+
+            <Button
+                android:id="@+id/Temp_Btn"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginLeft="35dp"
+                android:text="TEMP"
+                android:textStyle="bold">
+
+            </Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/rounded_corner">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/baseline_sensor_door_black_24dp"/>
+
+            <Button
+                android:id="@+id/Door_Btn"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="35dp"
+                android:gravity="center"
+                android:text="Door"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/baseline_light_black_24dp"/>
+
+            <Button
+                android:id="@+id/Light_Btn"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="35dp"
+                android:text="Light"
+                android:background="@color/black"
+                android:textStyle="bold">
+
+            </Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/baseline_sensors_black_24dp"/>
+
+            <Button
+                android:id="@+id/Sensor_Btn"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@color/black"
+                android:layout_marginLeft="35dp"
+                android:text="Sensor"
+                android:textStyle="bold">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/baseline_emergency_recording_black_24dp"/>
+
+            <Button
+                android:id="@+id/Record_Btn"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="35dp"
+                android:background="@color/black"
+                android:text="Record"
+                android:textStyle="bold">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/gray"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="48dp"
+                android:src="@drawable/baseline_rectangle_black_24dp"/>
+
+            <Button
+                android:id="@+id/Lcd_Btn"
+                android:layout_width="78dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginLeft="35dp"
+                android:background="@color/black"
+                android:text="LCD"
+                android:textStyle="bold">
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

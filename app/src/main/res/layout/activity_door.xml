@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DoorActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="150dp"
+                android:text="Door"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/baseline_sensor_door_black_24dp"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="13dp"
+            android:text="Door Sensor"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/gray"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="left"
+                android:letterSpacing="0.1"
+                android:text="Open"
+                android:background="#00ff0000"
+                android:textColor="@color/black"
+                android:textSize="27sp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/gray"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="left"
+                android:letterSpacing="0.1"
+                android:text="Close"
+                android:background="#00ff0000"
+                android:textColor="@color/black"
+                android:textSize="27sp"
+                android:textStyle="bold"></Button>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_corner"
+            android:backgroundTint="@color/gray"
+            android:orientation="horizontal"
+           >
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:text="Enter Angle"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left"/>
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="40dp"
+               android:layout_marginTop="10dp"
+               android:text="send"></Button>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
