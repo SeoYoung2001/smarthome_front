@@ -27,6 +27,10 @@
         <activity android:name=".TempActivity"
             android:exported="true"
             android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
         <activity android:name=".LightActivity"
             android:exported="true"
@@ -40,6 +44,25 @@
             android:exported="true"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity android:name=".ColorActivity"
+            android:exported="true"
+            android:parentActivityName=".LightActivity">
+        </activity>
+        <activity android:name=".WifiActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".WifiLoginActivity"
+            android:exported="true"
+            android:parentActivityName=".WifiActivity">
+        </activity>
+        <activity android:name=".DoorangleActivity"
+            android:exported="true"
+            android:parentActivityName=".DoorActivity">
+        </activity>
+
+
+
     </application>
 
 </manifest>

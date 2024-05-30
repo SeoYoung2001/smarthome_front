@@ -1,6 +1,7 @@
 package com.example.smarthomeapp;
 import android.os.Bundle;
 import android.view.View;
+import android.content.Intent;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
@@ -15,28 +16,71 @@ import androidx.core.view.WindowInsetsCompat;
 import android.widget.ImageButton;
 import android.content.Intent;
 import com.google.android.material.button.MaterialButton;
-public class TempActivity extends AppCompatActivity{
+public class TempActivity extends AppCompatActivity {
+    Button button1;
+    public final String EXTRA_MESSAGE = "com.example.Application0103.MESSAGE";
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_temp);
-        TextView textView =findViewById(R.id.tv1);
-        SeekBar seekBar =findViewById(R.id.sb1);
+        final TextView textView = (TextView) findViewById(R.id.temp);
+        final TextView textView2 = (TextView) findViewById(R.id.hudminity);
+        SeekBar seekBar = findViewById(R.id.sb1);
+        SeekBar seekBar2 = findViewById(R.id.sb2);
+        button1=findViewById(R.id.temphudtxt_btn);
+
+
+
+
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
-            public void onProgressChanged(SeekBar sb1, int i, boolean b) {
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                textView.setText( i + "°C");
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
 
             }
 
             @Override
-            public void onStartTrackingTouch(SeekBar sb1) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar sb1) {
+            public void onStopTrackingTouch(SeekBar seekBar) {
 
             }
         });
+        seekBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                textView2.setText(i + "%");
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String temperature = textView.getText().toString(); // 온도 텍스트 가져오기
+                String humidity = textView2.getText().toString(); // 습도 텍스트 가져오기
+                Intent intent= new Intent(TempActivity.this, MainActivity.class);
+                intent.putExtra("temperature", temperature);
+                intent.putExtra("humidity", humidity);
+                startActivity(intent);
+            }
+        });
+
+
+
     }
+
 
 }

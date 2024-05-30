@@ -18,37 +18,17 @@
             android:orientation="horizontal"
             android:layout_marginBottom="30dp">
 
-            <Button
-                android:id="@+id/imgBtn"
-                android:layout_width="60dp"
-                android:layout_height="70dp"
-                android:layout_marginTop="5dp"
-                android:background="#00ff0000"
-                android:drawableLeft="@drawable/baseline_arrow_back_ios_new_black_24dp"
-                android:textSize="50dp"
-                android:textStyle="bold" />
-
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="100dp"
+                android:layout_marginLeft="150dp"
                 android:text="Light"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold" />
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1"/>
 
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:gravity="right"
-                android:layout_marginTop="17dp"
-                android:src="@drawable/baseline_toc_black_24dp" />
 
         </LinearLayout>
 
@@ -125,16 +105,18 @@
             android:layout_height="90dp"
             android:layout_margin="10dp"
             android:background="@drawable/rounded_corner"
-            android:backgroundTint="@color/LightYellow"
+            android:backgroundTint="@color/LightPink"
             android:orientation="vertical"
             android:padding="28dp">
 
             <Button
+
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:background="#00ff0000"
+                android:id="@+id/color_Btn"
                 android:gravity="left"
                 android:letterSpacing="0.1"
-                android:background="#00ff0000"
                 android:text="Color Select"
                 android:textColor="@color/black"
                 android:textSize="30sp"

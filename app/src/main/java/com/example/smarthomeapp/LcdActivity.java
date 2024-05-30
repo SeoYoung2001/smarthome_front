@@ -23,8 +23,7 @@ public class LcdActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lcd);
-
-        final EditText edittext=(EditText)findViewById(R.id.Lcd_text);
+        final EditText edittext=(EditText)findViewById(R.id.Lcd_input);
         button1= findViewById(R.id.edit_btn);
         final TextView textView=(TextView)findViewById(R.id.text);
         button1.setOnClickListener(new View.OnClickListener() {

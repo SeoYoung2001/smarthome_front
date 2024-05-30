@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:text="Door Angle"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/LightGrey">
+
+        <EditText
+            android:id="@+id/angle_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:maxLength="50"
+            android:text="Enter the angle"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/door_editBtn"
+        android:layout_marginLeft="110dp"
+        android:layout_width="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="30dp"
+        android:background="@color/darkGrey"
+        android:textColor="@color/white"
+        android:text="send"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
+        android:background="@color/LightGrey"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:background="@color/LightGrey">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/baseline_sensor_door_black_24dp"/>
+
+        <TextView
+
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:text=" "
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/doortext"/>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

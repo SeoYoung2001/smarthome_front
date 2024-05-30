@@ -12,8 +12,13 @@
     <color name="thumb2">#6F6D6D</color>
     <color name="track1">#C3E39E</color>
     <color name="track2">#E3E4E3</color>
-    <color name="LightYellow">#FFE4E1</color>
+    <color name="LightPink">#FFE4E1</color>
     <color name="LightGrey">#D3D3D3</color>
+    <color name="Yellow">#ffd700</color>
+    <color name="Purple">#9370db</color>
+    <color name="Pink">#ffc0cb</color>
+    <color name="LightYellow">#ffffE0</color>
+    <color name="LightPurple">#e6e6fa</color>
 
 
 </resources>
