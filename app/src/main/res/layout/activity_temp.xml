@@ -96,7 +96,7 @@
         </SeekBar>
         <TextView
 
-            android:id="@+id/hudminity"
+            android:id="@+id/humidity"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
